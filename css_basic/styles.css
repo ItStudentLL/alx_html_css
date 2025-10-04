@@ -1,10 +1,13 @@
-/* styles.css - custom styles will go here */
+/* styles.css - updated custom styles */
 
 body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
   margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #fafafa;
+  color: #333;
 }
 
 main {
@@ -13,19 +16,53 @@ main {
   flex: auto;
 }
 
+/* Article styling */
 article {
   flex: 2;
   overflow-y: auto;
-  padding: 10px;
+  padding: 20px;
+  background-color: #ffffff;
+  border-right: 1px solid #ddd;
 }
 
+article h2 {
+  color: #4CAF50;
+}
+
+/* Aside styling */
 aside {
   flex: 1;
   overflow-y: auto;
-  padding: 10px;
+  padding: 20px;
+  background-color: #f0f0f0;
 }
 
+/* Header and Footer styling */
 header, footer {
   padding: 15px;
-  background-color: #f2f2f2;
+  background-color: #4CAF50;
+  color: white;
 }
+
+/* Header list and logo */
+header ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+header li {
+  margin-right: 15px;
+}
+
+.logo {
+  font-size: 30px;
+}
+
+article p:hover,
+aside p:hover {
+  background-color: #e0f7fa;
+}
+
